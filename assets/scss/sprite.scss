@@ -1,0 +1,228 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$bow-name: 'bow';
+$bow-x: 306px;
+$bow-y: 67px;
+$bow-offset-x: -306px;
+$bow-offset-y: -67px;
+$bow-width: 42px;
+$bow-height: 42px;
+$bow-total-width: 360px;
+$bow-total-height: 290px;
+$bow-image: '../scss/sprite.png';
+$bow: (306px, 67px, -306px, -67px, 42px, 42px, 360px, 290px, '../scss/sprite.png', 'bow', );
+$comment-video-name: 'comment-video';
+$comment-video-x: 0px;
+$comment-video-y: 0px;
+$comment-video-offset-x: 0px;
+$comment-video-offset-y: 0px;
+$comment-video-width: 306px;
+$comment-video-height: 200px;
+$comment-video-total-width: 360px;
+$comment-video-total-height: 290px;
+$comment-video-image: '../scss/sprite.png';
+$comment-video: (0px, 0px, 0px, 0px, 306px, 200px, 360px, 290px, '../scss/sprite.png', 'comment-video', );
+$comments-portrait-name: 'comments-portrait';
+$comments-portrait-x: 306px;
+$comments-portrait-y: 0px;
+$comments-portrait-offset-x: -306px;
+$comments-portrait-offset-y: 0px;
+$comments-portrait-width: 54px;
+$comments-portrait-height: 67px;
+$comments-portrait-total-width: 360px;
+$comments-portrait-total-height: 290px;
+$comments-portrait-image: '../scss/sprite.png';
+$comments-portrait: (306px, 0px, -306px, 0px, 54px, 67px, 360px, 290px, '../scss/sprite.png', 'comments-portrait', );
+$court-name: 'court';
+$court-x: 306px;
+$court-y: 109px;
+$court-offset-x: -306px;
+$court-offset-y: -109px;
+$court-width: 42px;
+$court-height: 42px;
+$court-total-width: 360px;
+$court-total-height: 290px;
+$court-image: '../scss/sprite.png';
+$court: (306px, 109px, -306px, -109px, 42px, 42px, 360px, 290px, '../scss/sprite.png', 'court', );
+$fedorov-name: 'fedorov';
+$fedorov-x: 90px;
+$fedorov-y: 200px;
+$fedorov-offset-x: -90px;
+$fedorov-offset-y: -200px;
+$fedorov-width: 59px;
+$fedorov-height: 64px;
+$fedorov-total-width: 360px;
+$fedorov-total-height: 290px;
+$fedorov-image: '../scss/sprite.png';
+$fedorov: (90px, 200px, -90px, -200px, 59px, 64px, 360px, 290px, '../scss/sprite.png', 'fedorov', );
+$notepad-name: 'notepad';
+$notepad-x: 306px;
+$notepad-y: 151px;
+$notepad-offset-x: -306px;
+$notepad-offset-y: -151px;
+$notepad-width: 40px;
+$notepad-height: 41px;
+$notepad-total-width: 360px;
+$notepad-total-height: 290px;
+$notepad-image: '../scss/sprite.png';
+$notepad: (306px, 151px, -306px, -151px, 40px, 41px, 360px, 290px, '../scss/sprite.png', 'notepad', );
+$notepad2-name: 'notepad2';
+$notepad2-x: 306px;
+$notepad2-y: 192px;
+$notepad2-offset-x: -306px;
+$notepad2-offset-y: -192px;
+$notepad2-width: 40px;
+$notepad2-height: 39px;
+$notepad2-total-width: 360px;
+$notepad2-total-height: 290px;
+$notepad2-image: '../scss/sprite.png';
+$notepad2: (306px, 192px, -306px, -192px, 40px, 39px, 360px, 290px, '../scss/sprite.png', 'notepad2', );
+$qoutes-pink-name: 'qoutes-pink';
+$qoutes-pink-x: 306px;
+$qoutes-pink-y: 256px;
+$qoutes-pink-offset-x: -306px;
+$qoutes-pink-offset-y: -256px;
+$qoutes-pink-width: 20px;
+$qoutes-pink-height: 15px;
+$qoutes-pink-total-width: 360px;
+$qoutes-pink-total-height: 290px;
+$qoutes-pink-image: '../scss/sprite.png';
+$qoutes-pink: (306px, 256px, -306px, -256px, 20px, 15px, 360px, 290px, '../scss/sprite.png', 'qoutes-pink', );
+$qoutes-white-name: 'qoutes-white';
+$qoutes-white-x: 326px;
+$qoutes-white-y: 256px;
+$qoutes-white-offset-x: -326px;
+$qoutes-white-offset-y: -256px;
+$qoutes-white-width: 20px;
+$qoutes-white-height: 15px;
+$qoutes-white-total-width: 360px;
+$qoutes-white-total-height: 290px;
+$qoutes-white-image: '../scss/sprite.png';
+$qoutes-white: (326px, 256px, -326px, -256px, 20px, 15px, 360px, 290px, '../scss/sprite.png', 'qoutes-white', );
+$sprite-ru-button-circle-name: 'sprite-ru-button-circle';
+$sprite-ru-button-circle-x: 331px;
+$sprite-ru-button-circle-y: 231px;
+$sprite-ru-button-circle-offset-x: -331px;
+$sprite-ru-button-circle-offset-y: -231px;
+$sprite-ru-button-circle-width: 18px;
+$sprite-ru-button-circle-height: 18px;
+$sprite-ru-button-circle-total-width: 360px;
+$sprite-ru-button-circle-total-height: 290px;
+$sprite-ru-button-circle-image: '../scss/sprite.png';
+$sprite-ru-button-circle: (331px, 231px, -331px, -231px, 18px, 18px, 360px, 290px, '../scss/sprite.png', 'sprite-ru-button-circle', );
+$video-icon-name: 'video-icon';
+$video-icon-x: 306px;
+$video-icon-y: 231px;
+$video-icon-offset-x: -306px;
+$video-icon-offset-y: -231px;
+$video-icon-width: 25px;
+$video-icon-height: 25px;
+$video-icon-total-width: 360px;
+$video-icon-total-height: 290px;
+$video-icon-image: '../scss/sprite.png';
+$video-icon: (306px, 231px, -306px, -231px, 25px, 25px, 360px, 290px, '../scss/sprite.png', 'video-icon', );
+$violet-rectangle-name: 'violet-rectangle';
+$violet-rectangle-x: 306px;
+$violet-rectangle-y: 271px;
+$violet-rectangle-offset-x: -306px;
+$violet-rectangle-offset-y: -271px;
+$violet-rectangle-width: 40px;
+$violet-rectangle-height: 2px;
+$violet-rectangle-total-width: 360px;
+$violet-rectangle-total-height: 290px;
+$violet-rectangle-image: '../scss/sprite.png';
+$violet-rectangle: (306px, 271px, -306px, -271px, 40px, 2px, 360px, 290px, '../scss/sprite.png', 'violet-rectangle', );
+$white-circle-name: 'white-circle';
+$white-circle-x: 0px;
+$white-circle-y: 200px;
+$white-circle-offset-x: 0px;
+$white-circle-offset-y: -200px;
+$white-circle-width: 90px;
+$white-circle-height: 90px;
+$white-circle-total-width: 360px;
+$white-circle-total-height: 290px;
+$white-circle-image: '../scss/sprite.png';
+$white-circle: (0px, 200px, 0px, -200px, 90px, 90px, 360px, 290px, '../scss/sprite.png', 'white-circle', );
+$spritesheet-width: 360px;
+$spritesheet-height: 290px;
+$spritesheet-image: '../scss/sprite.png';
+$spritesheet-sprites: ($bow, $comment-video, $comments-portrait, $court, $fedorov, $notepad, $notepad2, $qoutes-pink, $qoutes-white, $sprite-ru-button-circle, $video-icon, $violet-rectangle, $white-circle, );
+$spritesheet: (360px, 290px, '../scss/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

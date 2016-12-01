@@ -1,0 +1,102 @@
+.comments{
+  margin-bottom: 30px;
+  .comments-text{
+    display: block;
+    width: 600px;
+    height: 100px;
+    position: inherit;
+    margin: 0 auto 70px auto;
+
+    h2{
+      position: inherit;
+      font-size: 27px;
+      font-family: GothaProBold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p{
+      text-align: center;
+      font-family: GothaPro;
+      font-size: 15px;
+    }
+}
+  .comments-rectangle{
+    display: block;
+    position: inherit;
+    @include sprite($violet-rectangle);
+    margin-top: 11px;
+    margin-left: 47%;
+  }
+}
+
+.comments-block{
+
+  height: 320px;
+  width: 100%;
+}
+.comments-content-block{
+  position: relative;
+  height: 300px;
+  width: 31%;
+  margin-left: 2%;
+  float: left;
+}
+.qoutes-image{
+ @include sprite($qoutes-white);
+}
+.video-image{
+  @include sprite($video-icon);
+}
+.comment-text{
+  width: 310px;
+  font-family: GothaPro;
+  font-size: 17px;
+}
+.commentator-portrait{
+  @include sprite($fedorov);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+}
+.comments-footer{
+  display: block;
+  position: absolute;
+  width: 220px;
+  margin-left: -40px;
+  top: 82%;
+  font-family: GothaPro;
+  font-size: 17px;
+}
+
+.commentator-name{
+  font-family: GothaPro;
+  margin-top: 20px;
+  font-size: 17px;
+}
+#commentator-name-underVideo{
+  margin-top: 12px;
+}
+
+.position-ul li{
+  position: relative;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+.position-ul:last-child {
+  list-style: square outside;
+}
+.comments-content-block:hover{
+  .qoutes-image{
+    @include sprite($qoutes-pink);
+  }
+  .commentator-name{
+    color: mediumvioletred;
+  }
+}
+.comments-video{
+  @include sprite($comment-video);
+}
+
+
+@import "comments-adaptive";

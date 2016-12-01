@@ -1,0 +1,611 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.header {
+  position: relative;
+  width: 100%;
+  height: 670px;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px; }
+
+.header-background {
+  width: 100%;
+  height: 670px; }
+
+.header-logo {
+  position: absolute;
+  top: 51px;
+  left: 181px; }
+
+.navigation {
+  position: absolute;
+  top: 52px;
+  right: 80px;
+  width: 500px;
+  height: 40px;
+  font-family: GothaProMed;
+  font-size: 11.75px;
+  text-transform: uppercase; }
+  .navigation a {
+    position: relative;
+    padding-right: 28px;
+    text-decoration: none;
+    color: black; }
+  .navigation a:hover {
+    color: #d188ae; }
+  .navigation-button {
+    margin-left: 87px;
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+    width: 39px;
+    background-color: transparent;
+    border: #dfdfe2 solid 2px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; }
+    .navigation-button-circle {
+      background-image: url(../img/icons/sprite/sprite-ru-button-circle.png);
+      width: 18px;
+      height: 18px;
+      float: left;
+      position: relative;
+      top: 25%;
+      left: 10%; }
+    .navigation-button-text {
+      position: relative;
+      top: 8%;
+      left: 40%; }
+
+/*navigation*/
+.header-text-block {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: 156px;
+  left: 178px;
+  z-index: 3; }
+  .header-text-block h1 {
+    position: inherit;
+    font-family: GothaProBold;
+    font-size: 29.75px;
+    width: 307px; }
+  .header-text-block-rectangle {
+    display: block;
+    position: inherit;
+    background-image: url(../scss/sprite.png);
+    background-position: -306px -271px;
+    width: 40px;
+    height: 2px;
+    margin-top: 11px; }
+  .header-text-block-mainText {
+    position: inherit;
+    overflow: hidden;
+    display: block;
+    margin-top: 23px;
+    width: 450px;
+    height: 175px;
+    line-height: 24px;
+    font-family: GothaPro;
+    font-size: 15px; }
+  .header-text-block-button {
+    position: inherit;
+    display: inline-block;
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 250px;
+    border: #dfdfe2 solid 2px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #a70c5d; }
+    .header-text-block-button-circle {
+      background-image: url(../img/vectors/header-button-arrow.png);
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      position: inherit;
+      margin-left: 17px;
+      margin-top: 14px; }
+    .header-text-block-button-text {
+      position: inherit;
+      margin-left: 54px;
+      font-family: GothaProBlack;
+      font-size: 13px;
+      text-decoration: none;
+      color: #f9eff4; }
+  .header-text-block-button:hover {
+    background-color: darkmagenta; }
+
+/*.header-text-block*/
+.header-play-button {
+  position: absolute;
+  top: 285px;
+  left: 635px;
+  height: 90px;
+  width: 90px;
+  z-index: 2; }
+  .header-play-button-circle {
+    position: relative;
+    background-image: url(../scss/sprite.png);
+    background-position: 0px -200px;
+    width: 90px;
+    height: 90px; }
+    .header-play-button-circle-triangle {
+      background-image: url(../img/vectors/Play.png);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 20px;
+      position: relative;
+      top: 41%;
+      left: 44%; }
+
+.header-man {
+  position: absolute;
+  background-image: url("../img/photo/man.jpg");
+  background-repeat: no-repeat;
+  width: 413px;
+  height: 565px;
+  top: 105px;
+  right: 6%;
+  z-index: 1; }
+
+@media (min-width: 1335px) {
+  .header-man {
+    right: 11%; }
+  .navigation {
+    right: 4%; } }
+
+@media (max-width: 1150px) and (min-width: 700px) {
+  .header-logo {
+    left: 150px; }
+  .header-text-block {
+    left: 150px; }
+  #man {
+    background-size: 80%;
+    top: 219px;
+    left: 68%; } }
+
+@media (max-width: 860px) {
+  .header {
+    margin-right: 10%;
+    width: 80%; }
+    .header .header-logo {
+      position: absolute;
+      top: 30px;
+      left: 42%; }
+    .header-text-block-rectangle {
+      margin-left: 45%; }
+    .header #man {
+      top: 219px; }
+    .header .navigation {
+      left: 15%;
+      width: 420px;
+      top: 15%;
+      /*position: relative;
+      top: 120px;
+      left: 50%;
+     ;*/ }
+      .header .navigation a {
+        font-size: 12px; }
+      .header .navigation-button {
+        margin-left: 0; }
+    .header #header-mainText p {
+      font-size: 15px;
+      position: relative;
+      text-align: center; }
+    .header .header-text-block {
+      background-color: #888888;
+      opacity: 0.9;
+      left: 15%;
+      font-weight: bold; }
+      .header .header-text-block h1 {
+        position: relative;
+        font-size: 22px;
+        text-align: center;
+        padding-left: 17%; }
+      .header .header-text-block .header-text-block-button {
+        margin-left: 28%; }
+  /*.header*/ }
+
+main {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px; }
+
+.prices-text {
+  display: block;
+  width: 600px;
+  height: 100px;
+  position: inherit;
+  margin: 0 auto 70px auto; }
+  .prices-text h2 {
+    position: inherit;
+    font-size: 27px;
+    font-family: GothaProBold;
+    text-align: center;
+    text-transform: uppercase; }
+  .prices-text p {
+    text-align: center;
+    font-family: GothaPro;
+    font-size: 15px; }
+
+/*prices-text*/
+.main-rectangle {
+  display: block;
+  position: inherit;
+  background-image: url(../scss/sprite.png);
+  background-position: -306px -271px;
+  width: 40px;
+  height: 2px;
+  margin-top: 11px;
+  margin-left: 47%; }
+
+.services {
+  width: 85%;
+  height: 540px;
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 5%;
+  /*padding: 45px 60px 55px 150px;*/ }
+
+.first-block {
+  position: relative;
+  width: 45%;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 5%; }
+
+.second-block {
+  position: relative;
+  width: 45%;
+  float: right;
+  padding-right: 5%; }
+
+.block-header {
+  position: inherit;
+  display: inline-block;
+  line-height: 35px;
+  width: 445px;
+  height: 35px; }
+
+.first-image {
+  position: inherit;
+  background-image: url(../scss/sprite.png);
+  background-position: -306px -151px;
+  width: 40px;
+  height: 41px;
+  float: left; }
+
+.block-text {
+  float: left;
+  position: inherit;
+  font-family: GothaProBold;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 180px;
+  line-height: 22px; }
+
+.block-list {
+  width: 340px;
+  list-style-image: url("../img/icons/list-icon.png");
+  font-family: GothaPro;
+  font-size: 15px;
+  line-height: 23px; }
+
+.block-text-list {
+  font-size: 16px;
+  font-family: GothaPro; }
+
+.info-ico {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: violet solid 2px;
+  float: right;
+  position: relative; }
+
+.info-ico:hover {
+  background-color: violet;
+  z-index: 2; }
+
+.info-ico-href {
+  position: inherit;
+  padding-left: 15px;
+  line-height: 20px;
+  width: 15px;
+  height: 25px;
+  text-decoration: none;
+  z-index: 3; }
+
+.info-ico-href:hover {
+  background-color: violet; }
+
+@media (max-width: 1085px) {
+  .first-block .block-header,
+  .second-block .block-header {
+    width: 350px; } }
+
+@media (max-width: 865px) {
+  .services {
+    height: 1080px; }
+  .first-block {
+    width: 80%;
+    padding-left: 10%; }
+  .second-block {
+    width: 80%;
+    float: none;
+    padding-left: 10%; }
+  .prices-text p {
+    width: 500px;
+    padding-left: 10%; } }
+
+.comments {
+  margin-bottom: 30px; }
+  .comments .comments-text {
+    display: block;
+    width: 600px;
+    height: 100px;
+    position: inherit;
+    margin: 0 auto 70px auto; }
+    .comments .comments-text h2 {
+      position: inherit;
+      font-size: 27px;
+      font-family: GothaProBold;
+      text-align: center;
+      text-transform: uppercase; }
+    .comments .comments-text p {
+      text-align: center;
+      font-family: GothaPro;
+      font-size: 15px; }
+  .comments .comments-rectangle {
+    display: block;
+    position: inherit;
+    background-image: url(../scss/sprite.png);
+    background-position: -306px -271px;
+    width: 40px;
+    height: 2px;
+    margin-top: 11px;
+    margin-left: 47%; }
+
+.comments-block {
+  height: 320px;
+  width: 100%; }
+
+.comments-content-block {
+  position: relative;
+  height: 300px;
+  width: 31%;
+  margin-left: 2%;
+  float: left; }
+
+.qoutes-image {
+  background-image: url(../scss/sprite.png);
+  background-position: -326px -256px;
+  width: 20px;
+  height: 15px; }
+
+.video-image {
+  background-image: url(../scss/sprite.png);
+  background-position: -306px -231px;
+  width: 25px;
+  height: 25px; }
+
+.comment-text {
+  width: 310px;
+  font-family: GothaPro;
+  font-size: 17px; }
+
+.commentator-portrait {
+  background-image: url(../scss/sprite.png);
+  background-position: -90px -200px;
+  width: 59px;
+  height: 64px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-top: 25px; }
+
+.comments-footer {
+  display: block;
+  position: absolute;
+  width: 220px;
+  margin-left: -40px;
+  top: 82%;
+  font-family: GothaPro;
+  font-size: 17px; }
+
+.commentator-name {
+  font-family: GothaPro;
+  margin-top: 20px;
+  font-size: 17px; }
+
+#commentator-name-underVideo {
+  margin-top: 12px; }
+
+.position-ul li {
+  position: relative;
+  display: inline;
+  float: left;
+  margin-right: 10px; }
+
+.position-ul:last-child {
+  list-style: square outside; }
+
+.comments-content-block:hover .qoutes-image {
+  background-image: url(../scss/sprite.png);
+  background-position: -306px -256px;
+  width: 20px;
+  height: 15px; }
+
+.comments-content-block:hover .commentator-name {
+  color: mediumvioletred; }
+
+.comments-video {
+  background-image: url(../scss/sprite.png);
+  background-position: 0px 0px;
+  width: 306px;
+  height: 200px; }
+
+@media (max-width: 960px) {
+  .comments-block {
+    height: 975px; }
+  .comments-content-block {
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 20px;
+    border-bottom: solid mediumvioletred 1px; } }
+
+.request-text {
+  display: block;
+  width: 600px;
+  height: 100px;
+  position: inherit;
+  margin: 0 auto 70px auto; }
+  .request-text h2 {
+    position: inherit;
+    font-size: 27px;
+    font-family: GothaProBold;
+    text-align: center;
+    text-transform: uppercase; }
+
+.request-rectangle {
+  display: block;
+  position: inherit;
+  background-image: url(../scss/sprite.png);
+  background-position: -306px -271px;
+  width: 40px;
+  height: 2px;
+  margin-top: 11px;
+  margin-left: 47%; }
+
+.request-form {
+  width: 100%;
+  height: 500px; }
+
+.left-form {
+  float: left;
+  display: block;
+  height: 400px;
+  width: 40%;
+  margin-left: 12%;
+  padding-left: 5%; }
+  .left-form input {
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-left: 70px; }
+  .left-form .radio-form {
+    float: left;
+    margin-left: 0;
+    font-size: 12px; }
+
+.right-form {
+  float: left;
+  display: block;
+  height: 400px;
+  width: 40%; }
+  .right-form textarea {
+    height: 250px;
+    width: 380px;
+    resize: none;
+    border: 1px solid gray; }
+
+.request-form-button {
+  position: inherit;
+  display: inline-block;
+  width: 180px;
+  height: 52px;
+  line-height: 52px;
+  margin-left: 45%;
+  border: #dfdfe2 solid 2px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #a70c5d; }
+
+@media (max-width: 950px) {
+  .request-form {
+    width: 100%;
+    height: 1000px; }
+  .left-form {
+    height: 380px;
+    width: 55%;
+    margin-left: 28%; }
+    .left-form input {
+      width: 250px; }
+  .right-form {
+    float: left;
+    display: block;
+    height: 380px;
+    width: 55%;
+    margin-left: 28%; }
+    .right-form textarea {
+      height: 200px;
+      width: 300px;
+      margin-left: 16%; }
+    .right-form p {
+      margin-left: 20%; } }
+
+@font-face {
+  font-family: GothaProMed;
+  src: url(../fonts/GothaProMed.otf); }
+
+@font-face {
+  font-family: GothaProBold;
+  src: url(../fonts/GothaProBol.otf); }
+
+@font-face {
+  font-family: GothaPro;
+  src: url(../fonts/GothaProReg.otf); }
+
+@font-face {
+  font-family: GothaProBlack;
+  src: url(../fonts/GothaProBla.otf); }

@@ -1,0 +1,26 @@
+@media (max-width: 1085px)  {
+  .first-block,
+  .second-block{
+    .block-header{
+      width: 350px;
+    }
+  }
+}
+@media (max-width: 865px)  {
+  .services{
+    height: 540px *2;
+  }
+  .first-block {
+    width: 80%;
+    padding-left: 10%;
+  }
+  .second-block {
+    width: 80%;
+    float: none;
+    padding-left: 10%;
+  }
+  .prices-text p{
+    width: 500px;
+    padding-left: 10%;
+  }
+}

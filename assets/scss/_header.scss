@@ -1,0 +1,176 @@
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 670px;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+
+.header-background {
+  width: 100%;
+  height: 670px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 51px;
+  left: 181px;
+}
+
+.navigation{
+  position: absolute;
+  top: 52px;
+  right: 80px;
+  width: 500px;
+  height: 40px;
+  font-family: GothaProMed;
+  font-size: 11.75px;
+  text-transform: uppercase;
+
+  a{
+    position: relative;
+    padding-right: 28px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: #d188ae;
+  }
+  &-button {
+    margin-left: 87px;
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+    width: 39px;
+    background-color: transparent;
+    border: #dfdfe2 solid 2px;
+    @include border-radius(30px);
+
+    &-circle {
+      background-image: url(../img/icons/sprite/sprite-ru-button-circle.png);
+      width: 18px;
+      height: 18px;
+      float: left;
+      position: relative;
+      top: 25%;
+      left: 10%;
+    }
+    &-text {
+      position: relative;
+      top: 8%;
+      left: 40%;
+    }
+  }
+}/*navigation*/
+
+.header-text-block {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: 156px;
+  left: 178px;
+  z-index: 3;
+    h1{
+      position: inherit;
+      font-family: GothaProBold;
+      font-size: 29.75px;
+      width: 307px;
+    }
+  &-rectangle {
+    display: block;
+    position: inherit;
+    @include sprite($violet-rectangle);
+    margin-top: 11px;
+  }
+  &-mainText {
+    position: inherit;
+    overflow: hidden;
+    display: block;
+    margin-top: 23px;
+    width: 450px;
+    height: 175px;
+    line-height: 24px;
+    font-family: GothaPro;
+    font-size: 15px;
+  }
+  &-button{
+    position: inherit;
+    display: inline-block;
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 250px;
+    border: #dfdfe2 solid 2px;
+    @include border-radius(30px);
+    background-color: #a70c5d;
+    &-circle {
+      background-image: url(../img/vectors/header-button-arrow.png);
+      background-repeat: no-repeat ;
+      width: 25px;
+      height: 25px;
+      position: inherit;
+      margin-left: 17px;
+      margin-top: 14px;
+    }
+    &-text {
+      position: inherit;
+      margin-left: 54px;
+      font-family: GothaProBlack;
+      font-size: 13px;
+      text-decoration: none;
+      color: #f9eff4;
+    }
+  }
+  &-button:hover {
+    background-color: darkmagenta;
+  }
+}/*.header-text-block*/
+
+.header-play-button {
+  position: absolute;
+  top: 285px;
+  left: 635px;
+  height: 90px;
+  width: 90px;
+  z-index: 2;
+  &-circle {
+    position: relative;
+    @include sprite($white-circle);
+    &-triangle {
+      background-image: url(../img/vectors/Play.png);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 20px;
+      position: relative;
+      top: 41%;
+      left: 44%;
+    }
+  }
+}
+
+.header-man {
+  position: absolute;
+  background-image: url("../img/photo/man.jpg");
+  background-repeat: no-repeat;
+  width: 413px;
+  height: 565px;
+  top: 105px;
+  right: 6%;
+  z-index: 1;
+}
+
+@import "header-adaptive";
+
+

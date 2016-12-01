@@ -1,0 +1,118 @@
+
+
+main {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.prices-text{
+  display: block;
+  width: 600px;
+  height: 100px;
+  position: inherit;
+  margin: 0 auto 70px auto;
+
+  h2{
+    position: inherit;
+    font-size: 27px;
+    font-family: GothaProBold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    text-align: center;
+    font-family: GothaPro;
+    font-size: 15px;
+  }
+}/*prices-text*/
+
+.main-rectangle{
+  display: block;
+  position: inherit;
+  @include sprite($violet-rectangle);
+  margin-top: 11px;
+  margin-left: 47%;
+}
+
+.services {
+  width: 85%;
+  height: 540px;
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 5%;
+  /*padding: 45px 60px 55px 150px;*/
+}
+.first-block{
+  position: relative;
+  width: 45%;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 5%;
+}
+.second-block{
+  position: relative;
+  width: 45%;
+  float: right;
+  padding-right: 5%;
+}
+.block-header{
+  position: inherit;
+  display: inline-block;
+  line-height: 35px;
+  width: 445px;
+  height: 35px;
+}
+.first-image {
+  position: inherit;
+  @include sprite($notepad);
+  float: left;
+}
+
+.block-text{
+  float: left;
+  position: inherit;
+  font-family: GothaProBold;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 180px;
+  line-height: 22px;
+}
+.block-list{
+  width: 340px;
+  list-style-image: url('../img/icons/list-icon.png');
+  font-family: GothaPro;
+  font-size: 15px;
+  line-height: 23px;
+}
+.block-text-list{
+  font-size: 16px;
+  font-family: GothaPro;
+}
+.info-ico{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: violet solid 2px;
+  float: right;
+  position: relative;
+}
+.info-ico:hover{
+  background-color: violet;
+  z-index: 2;
+}
+.info-ico-href{
+  position: inherit;
+  padding-left: 15px;
+  line-height: 20px;
+  width: 15px;
+  height: 25px;
+  text-decoration: none;
+  z-index: 3;
+}
+.info-ico-href:hover{
+  background-color: violet;
+}
+
+@import "main-adaptive";
