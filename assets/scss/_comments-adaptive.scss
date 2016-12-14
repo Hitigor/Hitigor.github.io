@@ -1,11 +1,21 @@
+@media (max-width: 1111px)  {
+  .comments-content-block{
+    margin-left: 33px;;
+
+  }
+}
+
 @media (max-width: 960px)  {
   .comments-block{
     height: 975px;
   }
   .comments-content-block{
-    width: 50%;
-    margin-left: 35%;
+    width: 38%;
+    margin-left: 33%;
     margin-top: 20px;
     border-bottom: solid mediumvioletred 1px;
+  }
+  .show-more-button{
+   display: none;
   }
 }

@@ -1,5 +1,5 @@
 .comments{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   .comments-text{
     display: block;
     width: 600px;
@@ -30,11 +30,38 @@
 }
 
 .comments-block{
-
   height: 320px;
   width: 100%;
 }
+.comments-block:first-of-type{
+  margin-left: 3%;
+}
+.comments-block-1{
+  height: 320px;
+  width: 100%;
+  display:none;
+}
+.comments-block-1:first-of-type{
+  margin-left: 3%;
+}
+.show-more-button-hide{
+  display: none;
+}
+.show-more-button svg polygon{
+  fill: mediumvioletred;
+}
+.show-more-button svg{
+  width: 25px;
+
+}
 .comments-content-block{
+  position: relative;
+  height: 300px;
+  width: 281px;
+  margin-left: 83px;
+  float: left;
+}
+.comments-content-block-1{
   position: relative;
   height: 300px;
   width: 31%;
@@ -46,6 +73,7 @@
 }
 .video-image{
   @include sprite($video-icon);
+  margin-bottom: 5px;
 }
 .comment-text{
   width: 310px;
@@ -73,9 +101,7 @@
   margin-top: 20px;
   font-size: 17px;
 }
-#commentator-name-underVideo{
-  margin-top: 12px;
-}
+
 
 .position-ul li{
   position: relative;
@@ -94,9 +120,39 @@
     color: mediumvioletred;
   }
 }
-.comments-video{
+/*.comments-video{
   @include sprite($comment-video);
-}
+}*/
 
+/*.show-more-button{
+  @include sprite($load-more);
+}*/
+.load-more-icon{
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+  position: inherit;
+  margin-top: 10px;
+  float: left;
+  fill: mediumvioletred;
+}
+.show-more-button{
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  margin-left: 43%;
+}
+.show-more-button div{
+  display: inline-block;
+  height: 40px;
+}
+.load-more-txt{
+  line-height:40px;
+  text-align: center;
+  font-family:  GothaProBlack;
+  opacity: 0.8;
+  font-size: 13px;
+}
 
 @import "comments-adaptive";

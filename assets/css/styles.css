@@ -118,7 +118,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     position: inherit;
     background-image: url(../scss/sprite.png);
-    background-position: -306px -271px;
+    background-position: -124px -129px;
     width: 40px;
     height: 2px;
     margin-top: 11px; }
@@ -174,7 +174,7 @@ The `sprites` mixin generates identical output to the CSS template
   .header-play-button-circle {
     position: relative;
     background-image: url(../scss/sprite.png);
-    background-position: 0px -200px;
+    background-position: 0px 0px;
     width: 90px;
     height: 90px; }
     .header-play-button-circle-triangle {
@@ -281,7 +281,7 @@ main {
   display: block;
   position: inherit;
   background-image: url(../scss/sprite.png);
-  background-position: -306px -271px;
+  background-position: -124px -129px;
   width: 40px;
   height: 2px;
   margin-top: 11px;
@@ -318,7 +318,7 @@ main {
 .first-image {
   position: inherit;
   background-image: url(../scss/sprite.png);
-  background-position: -306px -151px;
+  background-position: -84px -90px;
   width: 40px;
   height: 41px;
   float: left; }
@@ -358,7 +358,7 @@ main {
 
 .info-ico-href {
   position: inherit;
-  padding-left: 15px;
+  padding-left: 12px;
   line-height: 20px;
   width: 15px;
   height: 25px;
@@ -375,7 +375,8 @@ main {
 
 @media (max-width: 865px) {
   .services {
-    height: 1080px; }
+    height: 1080px;
+    padding-left: 19%; }
   .first-block {
     width: 80%;
     padding-left: 10%; }
@@ -388,7 +389,7 @@ main {
     padding-left: 10%; } }
 
 .comments {
-  margin-bottom: 30px; }
+  margin-bottom: 100px; }
   .comments .comments-text {
     display: block;
     width: 600px;
@@ -409,7 +410,7 @@ main {
     display: block;
     position: inherit;
     background-image: url(../scss/sprite.png);
-    background-position: -306px -271px;
+    background-position: -124px -129px;
     width: 40px;
     height: 2px;
     margin-top: 11px;
@@ -419,7 +420,34 @@ main {
   height: 320px;
   width: 100%; }
 
+.comments-block:first-of-type {
+  margin-left: 3%; }
+
+.comments-block-1 {
+  height: 320px;
+  width: 100%;
+  display: none; }
+
+.comments-block-1:first-of-type {
+  margin-left: 3%; }
+
+.show-more-button-hide {
+  display: none; }
+
+.show-more-button svg polygon {
+  fill: mediumvioletred; }
+
+.show-more-button svg {
+  width: 25px; }
+
 .comments-content-block {
+  position: relative;
+  height: 300px;
+  width: 281px;
+  margin-left: 83px;
+  float: left; }
+
+.comments-content-block-1 {
   position: relative;
   height: 300px;
   width: 31%;
@@ -428,15 +456,16 @@ main {
 
 .qoutes-image {
   background-image: url(../scss/sprite.png);
-  background-position: -326px -256px;
+  background-position: -164px -90px;
   width: 20px;
   height: 15px; }
 
 .video-image {
   background-image: url(../scss/sprite.png);
-  background-position: -306px -231px;
+  background-position: -90px -64px;
   width: 25px;
-  height: 25px; }
+  height: 25px;
+  margin-bottom: 5px; }
 
 .comment-text {
   width: 310px;
@@ -445,7 +474,7 @@ main {
 
 .commentator-portrait {
   background-image: url(../scss/sprite.png);
-  background-position: -90px -200px;
+  background-position: -90px 0px;
   width: 59px;
   height: 64px;
   border-radius: 50%;
@@ -466,9 +495,6 @@ main {
   margin-top: 20px;
   font-size: 17px; }
 
-#commentator-name-underVideo {
-  margin-top: 12px; }
-
 .position-ul li {
   position: relative;
   display: inline;
@@ -480,34 +506,70 @@ main {
 
 .comments-content-block:hover .qoutes-image {
   background-image: url(../scss/sprite.png);
-  background-position: -306px -256px;
+  background-position: -164px -105px;
   width: 20px;
   height: 15px; }
 
 .comments-content-block:hover .commentator-name {
   color: mediumvioletred; }
 
-.comments-video {
-  background-image: url(../scss/sprite.png);
-  background-position: 0px 0px;
-  width: 306px;
-  height: 200px; }
+/*.comments-video{
+  @include sprite($comment-video);
+}*/
+/*.show-more-button{
+  @include sprite($load-more);
+}*/
+.load-more-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+  position: inherit;
+  margin-top: 10px;
+  float: left;
+  fill: mediumvioletred; }
+
+.show-more-button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  margin-left: 43%; }
+
+.show-more-button div {
+  display: inline-block;
+  height: 40px; }
+
+.load-more-txt {
+  line-height: 40px;
+  text-align: center;
+  font-family: GothaProBlack;
+  opacity: 0.8;
+  font-size: 13px; }
+
+@media (max-width: 1111px) {
+  .comments-content-block {
+    margin-left: 33px; } }
 
 @media (max-width: 960px) {
   .comments-block {
     height: 975px; }
   .comments-content-block {
-    width: 50%;
-    margin-left: 35%;
+    width: 38%;
+    margin-left: 33%;
     margin-top: 20px;
-    border-bottom: solid mediumvioletred 1px; } }
+    border-bottom: solid mediumvioletred 1px; }
+  .show-more-button {
+    display: none; } }
+
+.forms {
+  padding-bottom: 100px; }
 
 .request-text {
   display: block;
   width: 600px;
-  height: 100px;
+  height: 70px;
   position: inherit;
-  margin: 0 auto 70px auto; }
+  margin: 0 auto 0 auto; }
   .request-text h2 {
     position: inherit;
     font-size: 27px;
@@ -519,7 +581,7 @@ main {
   display: block;
   position: inherit;
   background-image: url(../scss/sprite.png);
-  background-position: -306px -271px;
+  background-position: -124px -129px;
   width: 40px;
   height: 2px;
   margin-top: 11px;
@@ -533,45 +595,107 @@ main {
   float: left;
   display: block;
   height: 400px;
-  width: 40%;
-  margin-left: 12%;
-  padding-left: 5%; }
+  width: 375px;
+  margin-left: 262px; }
+  .left-form .form-inputs {
+    margin-left: 70px;
+    margin-top: 15px; }
   .left-form input {
     width: 300px;
     border: none;
-    border-bottom: 1px solid gray;
-    margin-left: 70px; }
+    border-bottom: 0.5px solid gray;
+    font-family: GothaPro; }
   .left-form .radio-form {
     float: left;
-    margin-left: 0;
-    font-size: 12px; }
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 14px;
+    width: 301px;
+    position: absolute;
+    border: 0.5px solid grey; }
+  .left-form .radio-inputs {
+    font-size: 13px;
+    margin-bottom: 30px; }
+    .left-form .radio-inputs input {
+      width: 10px;
+      margin-left: 10px;
+      margin-top: 15px; }
+    .left-form .radio-inputs input:checked {
+      background-color: #0000fe; }
+    .left-form .radio-inputs label:hover {
+      color: #a70c5d;
+      cursor: pointer;
+      font-weight: bold; }
 
 .right-form {
   float: left;
   display: block;
   height: 400px;
-  width: 40%; }
+  width: 300px;
+  margin-left: 60px; }
   .right-form textarea {
     height: 250px;
     width: 380px;
-    resize: none;
-    border: 1px solid gray; }
+    resize: none; }
 
 .request-form-button {
   position: inherit;
-  display: inline-block;
+  vertical-align: middle;
   width: 180px;
   height: 52px;
-  line-height: 52px;
   margin-left: 45%;
   border: #dfdfe2 solid 2px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   border-radius: 30px;
-  background-color: #a70c5d; }
+  background-color: #a70c5d;
+  margin-top: 120px;
+  color: white;
+  cursor: pointer;
+  font-family: GothaProBlack; }
 
-@media (max-width: 950px) {
+.request-form-button:hover {
+  background-color: #750075; }
+
+.radio-header {
+  text-transform: uppercase;
+  /*margin-left: 70px;*/
+  position: relative;
+  height: 40px;
+  background-color: #f5f5f5;
+  opacity: 0.8;
+  width: 300px;
+  z-index: 1;
+  border-bottom: 0.5px solid grey;
+  margin-bottom: 20px; }
+  .radio-header span {
+    float: left;
+    display: inline-block;
+    height: 22px;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px; }
+
+.radio-header-icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: inherit;
+  background-image: url(../scss/sprite.png);
+  background-position: -149px -67px;
+  width: 22px;
+  height: 22px;
+  margin-left: 280px;
+  z-index: 2;
+  right: 15px;
+  top: 9px; }
+
+@media (max-width: 1100px) {
+  .right-form textarea {
+    width: 250px; } }
+
+@media (max-width: 1010px) {
   .request-form {
     width: 100%;
     height: 1000px; }
@@ -586,13 +710,164 @@ main {
     display: block;
     height: 380px;
     width: 55%;
-    margin-left: 28%; }
+    margin-left: 26%;
+    margin-top: 120px; }
     .right-form textarea {
       height: 200px;
       width: 300px;
       margin-left: 16%; }
     .right-form p {
-      margin-left: 20%; } }
+      margin-left: 22%; }
+  .request-form-button {
+    margin-top: 0;
+    margin-left: 42%; } }
+
+@media (max-width: 650px) {
+  .right-form textarea {
+    margin-left: 20%; } }
+
+@media (max-width: 550px) {
+  .right-form textarea {
+    margin-left: 25%; } }
+
+.pravo-agency {
+  margin-left: 49%;
+  text-transform: uppercase;
+  font-family: GothaProBlack;
+  font-size: 11px; }
+
+.adress-div {
+  margin-left: 38%;
+  display: block;
+  width: 350px;
+  height: 100px;
+  text-align: center; }
+
+.adress {
+  list-style: none;
+  font-family: GothaPro;
+  font-size: 18px; }
+  .adress a {
+    color: #a70c5d; }
+  .adress li {
+    margin-bottom: 10px; }
+
+.social-buttons {
+  display: block;
+  width: 400px;
+  height: 100px;
+  border: solid 1px black; }
+
+.facebook, .twitter, .linkedin {
+  border: 1px solid #2d78f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  opacity: 0.6;
+  margin-right: 15px; }
+
+.facebook:hover, .twitter:hover, .linkedin:hover {
+  border: 3px solid #a70c5d; }
+
+.facebook {
+  margin-left: 45%;
+  position: relative;
+  margin-bottom: 50px; }
+  .facebook .facebook-icon {
+    position: absolute;
+    background-image: url(../scss/sprite.png);
+    background-position: -12px -132px;
+    width: 5px;
+    height: 12px;
+    left: 23px;
+    top: 20px; }
+  .facebook .facebook-icon:hover {
+    background-image: url(../scss/sprite.png);
+    background-position: -196px -105px;
+    width: 5px;
+    height: 12px; }
+
+.facebook:hover .facebook-icon {
+  background-image: url(../scss/sprite.png);
+  background-position: -196px -105px;
+  width: 5px;
+  height: 12px; }
+
+.twitter {
+  position: relative; }
+  .twitter .twitter-icon {
+    position: absolute;
+    background-image: url(../scss/sprite.png);
+    background-position: -184px -90px;
+    width: 15px;
+    height: 11px;
+    left: 19px;
+    top: 20px; }
+  .twitter .twitter-icon:hover {
+    background-image: url(../scss/sprite.png);
+    background-position: -133px -64px;
+    width: 15px;
+    height: 11px; }
+
+.twitter:hover .twitter-icon {
+  background-image: url(../scss/sprite.png);
+  background-position: -133px -64px;
+  width: 15px;
+  height: 11px; }
+
+.linkedin {
+  position: relative; }
+  .linkedin .linkedin-icon {
+    position: absolute;
+    background-image: url(../scss/sprite.png);
+    background-position: 0px -132px;
+    width: 12px;
+    height: 13px;
+    left: 20px;
+    top: 18px; }
+  .linkedin .linkedin-icon:hover {
+    background-image: url(../scss/sprite.png);
+    background-position: -184px -105px;
+    width: 12px;
+    height: 13px; }
+
+.linkedin:hover .linkedin-icon {
+  background-image: url(../scss/sprite.png);
+  background-position: -184px -105px;
+  width: 12px;
+  height: 13px; }
+
+@media (max-width: 1050px) {
+  .adress-div {
+    margin-left: 35%; } }
+
+@media (max-width: 1010px) {
+  footer {
+    margin-top: -150px; }
+  .pravo-agency {
+    margin-left: 46%; }
+  .adress-div {
+    margin-left: 32%; }
+  .facebook {
+    margin-left: 42%; } }
+
+@media (max-width: 880px) {
+  .adress-div {
+    margin-left: 30%; } }
+
+@media (max-width: 750px) {
+  .adress-div {
+    margin-left: 28%; } }
+
+@media (max-width: 630px) {
+  .adress-div {
+    margin-left: 24%; } }
+
+@media (max-width: 530px) {
+  .adress-div {
+    margin-left: 20%; } }
 
 @font-face {
   font-family: GothaProMed;

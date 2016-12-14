@@ -7,6 +7,7 @@
     <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <header class="header">
     <img class="header-background" src="assets/img/head-back.png" />
@@ -146,7 +147,7 @@
             <p>Мнение наших клиентов <b>делает мир и нас лучше :)</b></p>
         </div>
         <div class="comments-block">
-            <div class="comments-content-block">
+            <div class="comments-content-block first">
                 <div class="qoutes-image"></div>
                 <div class="comment-text"><p>Главная тема для меня – любовь.
                     Мы все хотим ее, но не знаем как получить, поэтому все,
@@ -188,8 +189,8 @@
 
             <div class="comments-content-block">
                 <div class="video-image"></div>
-                <div class="comments-video"><a href="#"></a></div>
-                <div class="commentator-name" id="commentator-name-underVideo">Алексей Фёдоров</div>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/03h8Fey_mn8" frameborder="0" allowfullscreen></iframe>
+                <div class="commentator-name">Алексей Фёдоров</div>
                 <div class="comments-footer">
                     <span class="position"></span>
                     <ul class="position-ul">
@@ -203,6 +204,104 @@
                 </div>
             </div><!--comments-content-block-->
         </div><!--comments-block-->
+<div class="comments-block-1"></div>
+        <!--<div class="comments-block-1">
+            <div class="comments-content-block">
+                <div class="qoutes-image"></div>
+                <div class="comment-text"><p>Главная тема для меня – любовь.
+                    Мы все хотим ее, но не знаем как получить, поэтому все,
+                    что мы делаем, — это всего лишь попытки найти счастье.</p></div>
+                <div class="commentator-portrait"></div>
+                <div class="commentator-name">Алексей Фёдоров</div>
+                <div class="comments-footer">
+                    <span class="position"></span>
+                    <ul class="position-ul">
+                        <li>
+                            <span class="position">CEO</span>
+                        </li>
+                        <li>
+                            <a href="#" class="">deco.agency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>&lt;!&ndash;comments-content-block&ndash;&gt;
+
+            <div class="comments-content-block">
+                <div class="qoutes-image"></div>
+                <div class="comment-text"><p>Главная тема для меня – любовь.
+                    Мы все хотим ее, но не знаем как получить, поэтому все,
+                    что мы делаем, — это всего лишь попытки найти счастье.</p></div>
+                <div class="commentator-portrait"></div>
+                <div class="commentator-name">Алексей Фёдоров</div>
+                <div class="comments-footer">
+                    <span class="position"></span>
+                    <ul class="position-ul">
+                        <li>
+                            <span class="position">CEO</span>
+                        </li>
+                        <li>
+                            <a href="#" class="">deco.agency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>&lt;!&ndash;comments-content-block&ndash;&gt;
+
+            <div class="comments-content-block-1">
+                <div class="video-image"></div>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/03h8Fey_mn8" frameborder="0" allowfullscreen></iframe>
+                <div class="commentator-name" >Алексей Фёдоров</div>
+                <div class="comments-footer">
+                    <span class="position"></span>
+                    <ul class="position-ul">
+                        <li>
+                            <span class="position">CEO</span>
+                        </li>
+                        <li>
+                            <a href="#" class="">deco.agency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>&lt;!&ndash;comments-content-block&ndash;&gt;
+        </div>&lt;!&ndash;comments-block-1&ndash;&gt;-->
+
+
+
+        <button type="button" class="show-more-button">
+            <div>
+                <!--<img class="load-more-icon"  src="assets/img/vectors/load-more.svg"></img>-->
+                <svg version="1.1" id="show-more-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40.4 33.7" style="enable-background:new 0 0 40.4 33.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke: mediumvioletred; stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .st1{fill:none;stroke:mediumvioletred;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<path class="st0" d="M8.7,26.6c3.7,4.5,9.4,6.3,14.7,5.3"/>
+	<g>
+		<g>
+			<path class="st1" d="M5.7,12.1c-1.5,4.7-0.7,10,2.7,14.2"/>
+			<g>
+				<polygon points="0,10.6 10.5,5 10.2,16.9 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<path class="st0" d="M31.7,7.1C28.1,2.6,22.4,0.7,17,1.8"/>
+	<g>
+		<g>
+			<path class="st1" d="M34.7,21.6c1.5-4.7,0.7-10-2.7-14.2"/>
+			<g>
+				<polygon points="40.4,23.1 29.9,28.8 30.2,16.8 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
+                <span class="load-more-txt">загрузить еще</span>
+            </div>
+        </button>
+
     </article>
     <article class="forms">
         <div class="request-text">
@@ -211,19 +310,22 @@
         </div>
         <form class="request-form">
            <div class="left-form">
-               <p><input name='name' placeholder="ИМЯ*" required></p>
-                <p><input name='phone' placeholder="ТЕЛЕФОН*"  required></p>
-                <p><input name='mail' placeholder="E-MAIL*" required></p>
-                <p><input name='website' placeholder="САЙТ"></p>
-               <!--<div class="radio-form">
+               <p><input name='name' placeholder="ИМЯ*" required class="form-inputs"></p>
+                <p><input name='phone' placeholder="ТЕЛЕФОН*"  required class="form-inputs"></p>
+                <p><input name='mail' placeholder="E-MAIL*" required class="form-inputs"></p>
+                <p><input name='website' placeholder="САЙТ" class="form-inputs"></p>
+               <div class="radio-form">
                    <div class="radio-header">
-                       <p></p>
+                       <span>Меня интересует</span>
+                       <div class="radio-header-icon"></div>
                    </div>
-                   <input type="radio" name=" " value=""> Наведение порядка в делах<Br>
-                   <input type="radio" name=" " value=""> Правовое сопровождение деятельности<Br>
-                   <input type="radio" name=" " value=""> Оптимизация договорных отношений<Br>
-                   <input type="radio" name=" " value=""> Разработка договоров<Br>
-               </div>-->
+                   <div class="radio-inputs">
+                       <label><input type="radio" name=" " value=""> Наведение порядка в делах<Br></label>
+                       <label><input type="radio" name=" " value=""> Правовое сопровождение деятельности<Br></label>
+                       <label><input type="radio" name=" " value=""> Оптимизация договорных отношений<Br></label>
+                       <label><input type="radio" name=" " value=""> Разработка договоров<Br></label>
+                   </div>
+               </div>
 
            </div>
             <div class="right-form">
@@ -234,6 +336,36 @@
         </form><!--request-form-->
     </article>
 </main>
+    <footer>
+        <div >
 
+        </div>
+        <span class="pravo-agency">Pravo agency:</span>
+        <div class="adress-div">
+            <ul class="adress">
+                <li>01001, Киев, ул.Хрещатик </li>
+                <li>+380 (67) 111 11 11</li>
+                <li><a href="#">hello@email</a></li>
+            </ul>
+        </div>
+
+            <a href="#">
+                <div class="facebook">
+                    <div class="facebook-icon"></div>
+                </div>
+            </a>
+            <a  href="#">
+                <div class="twitter">
+                    <div class="twitter-icon"></div>
+                </div>
+            </a>
+            <a  href="#">
+                <div class="linkedin">
+                    <div class="linkedin-icon"></div>
+                </div>
+            </a>
+    </footer>
+
+<script src="assets/js/show-more.js"></script>
 </body>
 </html>
