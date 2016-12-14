@@ -1,0 +1,98 @@
+.pravo-agency{
+  margin-left: 49%;
+  text-transform: uppercase;
+  font-family: GothaProBlack;
+  font-size: 11px;
+}
+.adress-div{
+  margin-left: 38%;
+  display: block;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+}
+.adress{
+  a{
+    color: #a70c5d;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+  list-style: none;
+  font-family: GothaPro;
+  font-size: 18px;
+}
+.social-buttons{
+  display: block;
+  width: 400px;
+  height: 100px;
+  border: solid 1px black;
+}
+.facebook, .twitter, .linkedin{
+  border: 1px solid #2d78f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  opacity: 0.6;
+  margin-right: 15px;
+}
+.facebook:hover, .twitter:hover, .linkedin:hover{
+  border: 3px solid #a70c5d;
+}
+.facebook{
+  margin-left: 45%;
+  position: relative;
+  margin-bottom: 50px;
+  .facebook-icon{
+     position: absolute;
+     @include sprite($fb-white);
+     left: 23px;
+     top: 20px;
+   }
+  .facebook-icon:hover{
+    @include sprite($fb-hover);
+  }
+}
+.facebook:hover{
+  .facebook-icon{
+    @include sprite($fb-hover);
+  }
+}
+.twitter{
+  position: relative;
+  .twitter-icon{
+    position: absolute;
+    @include sprite($tw);
+    left: 19px;
+    top: 20px;
+  }
+  .twitter-icon:hover{
+    @include sprite($tw-hover);
+  }
+}
+.twitter:hover{
+  .twitter-icon{
+    @include sprite($tw-hover);
+  }
+}
+.linkedin{
+  position: relative;
+  .linkedin-icon{
+    position: absolute;
+    @include sprite($li);
+    left: 20px;
+    top: 18px;
+  }
+  .linkedin-icon:hover{
+    @include sprite($li-hover);
+  }
+}
+.linkedin:hover{
+  .linkedin-icon{
+    @include sprite($li-hover);
+  }
+}
+
+@import "footer-adaptive";
